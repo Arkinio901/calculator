@@ -5,9 +5,9 @@
 }
 
 .container {
- width: 400px;
- height: 400px;
- position: absolute;
+ width: 500px;
+ height: 500px;
+ position: fixed;
  top: 50%;
  left: 50%;
  transform: translate(-50%, -50%);
@@ -31,5 +31,32 @@
 }
 
 .keyboard {
+ width: 100%;
+ height: 93%;
+ margin-top: 20px;
+ flex-wrap: wrap;
+ justify-content: space-around;
  display: flex;
+ overflow: hidden;
+
+
+}
+
+.keyboard button {
+ text-align: center;
+ border: none;
+ width: 26%;
+ line-height: 50px;
+ height: 50px;
+ background-color: blue;
+ color: white;
+ font-size: 25px;
+ font-weight: bold;
+
+}
+
+.keyboard button :focus,
+.keyboard button :active {
+ outline: none;
+
 }
